@@ -1,0 +1,1 @@
+SELECT p.emp_id,p.payroll_month,SUM(p.amount_num) payroll_cost,e.separation_date FROM warehouse_payroll_line p JOIN staging_employees e USING(emp_id) WHERE p.component_type='EARNING' AND e.separation_date<>'' AND p.payroll_month>substr(e.separation_date,1,7) GROUP BY 1,2,4;

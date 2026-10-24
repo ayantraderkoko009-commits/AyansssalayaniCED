@@ -1,0 +1,13 @@
+file,raw_rows,loaded_rows,rejected_rows
+employees.csv,1316,1316,0
+employment_history.csv,3686,3686,0
+departments.csv,25,25,0
+shifts.json,4,4,0
+shift_roster.csv,36402,36402,0
+device_mapping.csv,1260,1260,0
+biometric_punches.csv,345280,345280,0
+holidays.csv,12,12,0
+leave_requests.json,5372,5372,0
+overtime_requests.csv,22098,22098,0
+payroll_lines.csv,53617,53617,0
+applications.csv,3835,3835,0

@@ -1,0 +1,2 @@
+emp_id,effective_from,discarded_reason,kept_reason,resolution
+E11259,2026-07-01,Salary Revision,Hire,Same employee and effective date; retained last source row because no intra-day sequence is supplied

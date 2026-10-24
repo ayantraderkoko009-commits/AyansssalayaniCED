@@ -1,0 +1,5 @@
+device_id,estimated_clock_offset_minutes,sample_punch_days,median_shift_start_delta_minutes
+DEV-KOR-01,0,55283,1.1
+DEV-FSD-01,0,53788,1.9
+DEV-SITE-01,60,48563,51.6
+DEV-HO-01,0,16700,-6.4

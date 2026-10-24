@@ -1,0 +1,1 @@
+SELECT l.emp_id,COUNT(DISTINCT l.leave_date) approved_annual_days,e.annual_leave_entitlement FROM warehouse_leave_day l JOIN staging_employees e USING(emp_id) WHERE lower(l.leave_type)='annual' GROUP BY 1,3 HAVING COUNT(DISTINCT l.leave_date)>CAST(e.annual_leave_entitlement AS INTEGER);

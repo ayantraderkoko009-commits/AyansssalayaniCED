@@ -1,0 +1,1 @@
+SELECT DISTINCT p.emp_id,p.payroll_month,e.full_name FROM warehouse_payroll_line p JOIN staging_employees e USING(emp_id) LEFT JOIN warehouse_attendance_daily a ON a.emp_id=p.emp_id AND substr(a.attendance_date,1,7)=p.payroll_month WHERE p.component_type='EARNING' GROUP BY 1,2,3 HAVING COUNT(a.attendance_date)=0;

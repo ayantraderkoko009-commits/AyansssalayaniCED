@@ -1,0 +1,1 @@
+SELECT payroll_month AS month, department, SUM(punch_ot_hours) punch_overtime_hours, SUM(approved_ot_hours) approved_overtime_hours, SUM(paid_ot_hours) paid_overtime_hours FROM warehouse_monthly_employee GROUP BY 1,2;
